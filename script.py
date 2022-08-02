@@ -11,7 +11,7 @@ for v in data.split(';'):
     while i<len(v):
         if v[i]==',':
             if cnt==0:
-                print('"{"name":"'+tmp+'"',end=',')
+                print('{"name":"'+tmp+'"',end=',')
             elif cnt==1:
                 print('"ed":'+tmp,end=',')
             elif cnt==2:
