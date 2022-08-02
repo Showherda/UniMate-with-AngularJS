@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-sanitize.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <script src="myjs.js"></script>
+    <title>UniMate!</title>
+</head>
+<body ng-app="myApp" ng-controller="myCtrl">
+    <p>Fill in the form and hit search!</p>
+    <div>
+        <span>Maximum family contribution</span>
+        <span><select ng-init="efc=costs[2]" ng-model="efc" ng-options="x for x in costs"></select></span>
+    </div>
+    <div>
+        <span>Do you prefer Early Decision?</span>
+        <span><input type="checkbox" ng-model="ed"></span>
+    </div>
+    <div>
+        <button ng-click="search()" ng-disabled="submitButtonDisabled">Submit</button>
+    </div>
+    <div>
+        <p>Click on any row to view more information. Information source: CDS 2020-2021. An RD Acceptance Rate of 0% means we don't have its acceptance data.</p>
+    </div>
+    <div>
+        <span>Show </span>
+        <span><select ng-init="numEntries=numEntryOptions[0]" ng-model="numEntries" ng-options="x for x in numEntryOptions"></select></span>
+        <span>entries</span>
+    </div>
+    <div>
+        <span>Search university by name: </span>
+        <input type="text" ng-init="searchQuery=''" ng-model="searchQuery">
+    </div>
+    <div>
+        <table ng-if="searchQuery===''">
+            <tr ng-repeat="x in all | limitTo:numEntries"><td ng-on-click="displayInfo()">{{x[0]}}</td></tr>
+        </table>
+        <table ng-if="searchQuery!==''">
+            <tr ng-repeat="x in all | filter:{name:searchQuery} | limitTo:numEntries"><td ng-on-click="displayInfo()">{{x[0]}}</td></tr>
+        </table>
+    </div>
+    <div style="float: right">
+        <p></p>
+    </div>
+</body>
+</html>
