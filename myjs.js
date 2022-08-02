@@ -1,8 +1,7 @@
 var app=angular.module("myApp", ['ngSanitize']);
 app.controller('myCtrl', function($scope, $http) {
-    const requestURL='https://showherda.github.io/unimate/data.txt';
+    const requestURL='https://showherda.github.io/unimate/output.txt';
     $scope.submitButtonDisabled=true;
-    $scope.all=[[]];
     $scope.costs=[];
     $scope.numEntryOptions=[10, 25, 50, 100];
     
@@ -11,7 +10,7 @@ app.controller('myCtrl', function($scope, $http) {
     
     $http.get(requestURL).then(function (response) {
         $scope.submitButtonDisabled=false;
-        for (let v of response.data.split(';')){
+        /* for (let v of response.data.split(';')){
 			v=v.replace('\n', '');
 			let t=[], i=0, s='';
 			while (i<v.length){
@@ -32,7 +31,9 @@ app.controller('myCtrl', function($scope, $http) {
 			$scope.all[$scope.all.length-1].push(s);
 			$scope.all.push([]);
 		}
-		$scope.all.pop();
+		$scope.all.pop(); */
+		$scope.universityList=JSON.parse(response.data);
+		console.log($scope.universityList);
         
         $scope.search = function() {
             if ($scope.ed)

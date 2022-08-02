@@ -37,10 +37,10 @@
     </div>
     <div>
         <table ng-if="searchQuery===''">
-            <tr ng-repeat="x in all | limitTo:numEntries"><td ng-on-click="displayInfo()">{{x[0]}}</td></tr>
+            <tr ng-repeat="university in universityList | limitTo:numEntries"><td ng-on-click="displayInfo()">{{university.name}}</td></tr>
         </table>
         <table ng-if="searchQuery!==''">
-            <tr ng-repeat="x in all | filter:{name:searchQuery} | limitTo:numEntries"><td ng-on-click="displayInfo()">{{x[0]}}</td></tr>
+            <tr ng-repeat="university in universityList | filter:{name:searchQuery} | limitTo:numEntries"><td ng-on-click="displayInfo()">{{university.name}}</td></tr>
         </table>
     </div>
     <div style="float: right">

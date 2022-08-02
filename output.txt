@@ -1,5 +1,4 @@
-[
-{name:"Agnes Scott College",ed:93.3,rd:67.1,edp:10.2,edtord:1.4,aap:"EA",coa:59445,ftug:964,ftinc:33,pinc:3,nb:true,mrt:true,na:false,afa:25227,pinca:67.0,efc:34218},
+[{name:"Agnes Scott College",ed:93.3,rd:67.1,edp:10.2,edtord:1.4,aap:"EA",coa:59445,ftug:964,ftinc:33,pinc:3,nb:true,mrt:true,na:false,afa:25227,pinca:67.0,efc:34218},
 {name:"Alfred University",ed:94.3,rd:63.9,edp:9.2,edtord:1.5,aap:"",coa:51412,ftug:1562,ftinc:129,pinc:8,nb:false,mrt:true,na:false,afa:11954,pinca:26.0,efc:39458},
 {name:"Allegheny College",ed:45,rd:74.3,edp:19.3,edtord:0.6,aap:"ED II, EA",coa:67560,ftug:1600,ftinc:53,pinc:3,nb:false,mrt:true,na:false,afa:34569,pinca:100.0,efc:32991},
 {name:"American University",ed:83.5,rd:36.4,edp:50.7,edtord:2.3,aap:"ED II",coa:69366,ftug:7103,ftinc:879,pinc:12,nb:false,mrt:false,na:false,afa:12731,pinca:6.0,efc:56635},
@@ -337,5 +336,4 @@
 {name:"Winona State University",ed:0,rd:0,edp:0,edtord:0,aap:"",coa:28821,ftug:6029,ftinc:117,pinc:2,nb:false,mrt:true,na:false,afa:2903,pinca:86.0,efc:25918},
 {name:"Wittenberg University",ed:0,rd:0,edp:0,edtord:0,aap:"",coa:55506,ftug:1379,ftinc:7,pinc:1,nb:true,mrt:true,na:false,afa:31656,pinca:86.0,efc:23850},
 {name:"Worcester Polytechnic Institute",ed:0,rd:0,edp:0,edtord:0,aap:"",coa:72296,ftug:4578,ftinc:360,pinc:8,nb:true,mrt:true,na:false,afa:19039,pinca:74.0,efc:53257},
-{name:"Xavier University of Louisiana",ed:0,rd:0,edp:0,edtord:0,aap:"",coa:39432,ftug:2424,ftinc:38,pinc:2,nb:true,mrt:true,na:false,afa:10532,pinca:100.0,efc:28900}
-]
+{name:"Xavier University of Louisiana",ed:0,rd:0,edp:0,edtord:0,aap:"",coa:39432,ftug:2424,ftinc:38,pinc:2,nb:true,mrt:true,na:false,afa:10532,pinca:100.0,efc:28900}]
