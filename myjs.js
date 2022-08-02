@@ -1,6 +1,6 @@
 var app=angular.module("myApp", ['ngSanitize']);
 app.controller('myCtrl', function($scope, $http) {
-    const requestURL='https://showherda.github.io/unimate/output.txt';
+    const requestURL='https://showherda.github.io/UniMate-with-AngularJS/output.txt';
     $scope.submitButtonDisabled=true;
     $scope.costs=[];
     $scope.numEntryOptions=[10, 25, 50, 100];
